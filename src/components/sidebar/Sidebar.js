@@ -29,7 +29,7 @@ function Sidebar() {
       <SidebarOption text="See More" Icon={MoreHorizIcon} />
  
       {/* Tweet button */}
-      <Button variant="outlined" className="sidebar--tweet" >Post Tweet</Button>
+      <Button variant="outlined" className="sidebar--tweet" fullWidth >Post Tweet</Button>
     </div>
   );
 }
