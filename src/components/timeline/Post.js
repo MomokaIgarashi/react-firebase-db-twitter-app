@@ -3,26 +3,27 @@ import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Post.css"
 
-function Post() {
+function Post({ displayName, username, text, verified, avator, image }) {
   return (
     <div className='post'>
       <div className='post--avator'>
-        <Avatar />
+        <Avatar src={avator} />
       </div>
       <div className='post--body'>
         <div className='post--header'>
             <div className='post--headerText'>
-                <h3>Programming Hello</h3>
-                <span className='post--headerSpecial'>
-                    <VerifiedUser className="post--badge"/>
-                    @Momoka_engineer
-                </span>
+                <h3>{displayName}
+                  <span className='post--headerSpecial'>
+                      <VerifiedUser className="post--badge"/>
+                      @{username}
+                  </span>
+                </h3>
             </div>
             <div className='post--headerDescription'>
-                <p>React now</p>
+                <p>{text}</p>
             </div>
         </div>
-        <img src="https://source.unsplash.com/random" alt='' />
+        <img src={image} alt='' />
         <div className='post--footer'>
             <ChatBubbleOutline fontSize='small' />
             <Repeat fontSize='small'/>

@@ -16,7 +16,14 @@ function Timeline() {
         <TweetBox />
 
         {/* Post */}
-        <Post />
+        <Post 
+          displayName="Programming Tutorial"
+          username="momoka_developer"
+          verified={true}
+          text="first tweet"
+          avator="http://shincode.info/wp-content/uploads/2021/12/icon.png"
+          image="https://source.unsplash.com/random"
+        />
     </div>
   )
 }
